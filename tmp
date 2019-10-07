@@ -1,0 +1,1243 @@
+	.headerflags	@"EF_CUDA_TEXMODE_UNIFIED EF_CUDA_64BIT_ADDRESS EF_CUDA_SM60 EF_CUDA_VIRTUAL_SM(EF_CUDA_SM60)"
+	.elftype	@"ET_REL"
+
+
+//--------------------- .nv.info                  --------------------------
+	.section	.nv.info,"",@"SHT_CUDA_INFO"
+	.align	4
+
+
+	//----- nvinfo : EIATTR_REGCOUNT
+	.align		4
+        /*0000*/ 	.byte	0x04, 0x2f
+        /*0002*/ 	.short	(.L_28 - .L_27)
+	.align		4
+.L_27:
+        /*0004*/ 	.word	index@(__omp_outlined__)
+        /*0008*/ 	.word	0x00000023
+
+
+	//----- nvinfo : EIATTR_MAX_STACK_SIZE
+	.align		4
+.L_28:
+        /*000c*/ 	.byte	0x04, 0x23
+        /*000e*/ 	.short	(.L_30 - .L_29)
+	.align		4
+.L_29:
+        /*0010*/ 	.word	index@(__omp_outlined__)
+        /*0014*/ 	.word	0x00000000
+
+
+	//----- nvinfo : EIATTR_FRAME_SIZE
+	.align		4
+.L_30:
+        /*0018*/ 	.byte	0x04, 0x11
+        /*001a*/ 	.short	(.L_32 - .L_31)
+	.align		4
+.L_31:
+        /*001c*/ 	.word	index@(__omp_outlined__)
+        /*0020*/ 	.word	0x00000080
+
+
+	//----- nvinfo : EIATTR_REGCOUNT
+	.align		4
+.L_32:
+        /*0024*/ 	.byte	0x04, 0x2f
+        /*0026*/ 	.short	(.L_34 - .L_33)
+	.align		4
+.L_33:
+        /*0028*/ 	.word	index@(__omp_offloading_10302_17e8471_main_l9)
+        /*002c*/ 	.word	0x00000019
+
+
+	//----- nvinfo : EIATTR_MAX_STACK_SIZE
+	.align		4
+.L_34:
+        /*0030*/ 	.byte	0x04, 0x23
+        /*0032*/ 	.short	(.L_36 - .L_35)
+	.align		4
+.L_35:
+        /*0034*/ 	.word	index@(__omp_offloading_10302_17e8471_main_l9)
+        /*0038*/ 	.word	0x00000000
+
+
+	//----- nvinfo : EIATTR_FRAME_SIZE
+	.align		4
+.L_36:
+        /*003c*/ 	.byte	0x04, 0x11
+        /*003e*/ 	.short	(.L_38 - .L_37)
+	.align		4
+.L_37:
+        /*0040*/ 	.word	index@(__omp_offloading_10302_17e8471_main_l9)
+        /*0044*/ 	.word	0x00000028
+.L_38:
+
+
+//--------------------- .nv.info.__omp_offloading_10302_17e8471_main_l9 --------------------------
+	.section	.nv.info.__omp_offloading_10302_17e8471_main_l9,"",@"SHT_CUDA_INFO"
+	.align	4
+
+
+	//----- nvinfo : EIATTR_SW2393858_WAR
+	.align		4
+        /*0000*/ 	.byte	0x01, 0x30
+	.zero		2
+
+
+	//----- nvinfo : EIATTR_SW1850030_WAR
+	.align		4
+        /*0004*/ 	.byte	0x01, 0x2a
+	.zero		2
+
+
+	//----- nvinfo : EIATTR_PARAM_CBANK
+	.align		4
+        /*0008*/ 	.byte	0x04, 0x0a
+        /*000a*/ 	.short	(.L_40 - .L_39)
+	.align		4
+.L_39:
+        /*000c*/ 	.word	index@(.nv.constant0.__omp_offloading_10302_17e8471_main_l9)
+        /*0010*/ 	.short	0x0140
+        /*0012*/ 	.short	0x0020
+
+
+	//----- nvinfo : EIATTR_CBANK_PARAM_SIZE
+	.align		4
+.L_40:
+        /*0014*/ 	.byte	0x03, 0x19
+        /*0016*/ 	.short	0x0020
+
+
+	//----- nvinfo : EIATTR_KPARAM_INFO
+	.align		4
+        /*0018*/ 	.byte	0x04, 0x17
+        /*001a*/ 	.short	(.L_42 - .L_41)
+.L_41:
+        /*001c*/ 	.word	0x00000000
+        /*0020*/ 	.short	0x0003
+        /*0022*/ 	.short	0x0018
+        /*0024*/ 	.byte	0x00, 0xf0, 0x21, 0x00
+
+
+	//----- nvinfo : EIATTR_KPARAM_INFO
+	.align		4
+.L_42:
+        /*0028*/ 	.byte	0x04, 0x17
+        /*002a*/ 	.short	(.L_44 - .L_43)
+.L_43:
+        /*002c*/ 	.word	0x00000000
+        /*0030*/ 	.short	0x0002
+        /*0032*/ 	.short	0x0010
+        /*0034*/ 	.byte	0x00, 0xf0, 0x21, 0x00
+
+
+	//----- nvinfo : EIATTR_KPARAM_INFO
+	.align		4
+.L_44:
+        /*0038*/ 	.byte	0x04, 0x17
+        /*003a*/ 	.short	(.L_46 - .L_45)
+.L_45:
+        /*003c*/ 	.word	0x00000000
+        /*0040*/ 	.short	0x0001
+        /*0042*/ 	.short	0x0008
+        /*0044*/ 	.byte	0x00, 0xf0, 0x21, 0x00
+
+
+	//----- nvinfo : EIATTR_KPARAM_INFO
+	.align		4
+.L_46:
+        /*0048*/ 	.byte	0x04, 0x17
+        /*004a*/ 	.short	(.L_48 - .L_47)
+.L_47:
+        /*004c*/ 	.word	0x00000000
+        /*0050*/ 	.short	0x0000
+        /*0052*/ 	.short	0x0000
+        /*0054*/ 	.byte	0x00, 0xf0, 0x21, 0x00
+
+
+	//----- nvinfo : EIATTR_MAXREG_COUNT
+	.align		4
+.L_48:
+        /*0058*/ 	.byte	0x03, 0x1b
+        /*005a*/ 	.short	0x00ff
+
+
+	//----- nvinfo : EIATTR_EXTERNS
+	.align		4
+        /*005c*/ 	.byte	0x04, 0x0f
+        /*005e*/ 	.short	(.L_50 - .L_49)
+
+
+	//   ....[0]....
+	.align		4
+.L_49:
+        /*0060*/ 	.word	index@(__kmpc_spmd_kernel_init)
+
+
+	//   ....[1]....
+	.align		4
+        /*0064*/ 	.word	index@(__kmpc_global_thread_num)
+
+
+	//   ....[2]....
+	.align		4
+        /*0068*/ 	.word	index@(__kmpc_spmd_kernel_deinit_v2)
+
+
+	//----- nvinfo : EIATTR_EXIT_INSTR_OFFSETS
+	.align		4
+.L_50:
+        /*006c*/ 	.byte	0x04, 0x1c
+        /*006e*/ 	.short	(.L_52 - .L_51)
+
+
+	//   ....[0]....
+.L_51:
+        /*0070*/ 	.word	0x000007f8
+.L_52:
+
+
+//--------------------- .nv.info.__omp_outlined__ --------------------------
+	.section	.nv.info.__omp_outlined__,"",@"SHT_CUDA_INFO"
+	.align	4
+
+
+	//----- nvinfo : EIATTR_SW2393858_WAR
+	.align		4
+        /*0000*/ 	.byte	0x01, 0x30
+	.zero		2
+
+
+	//----- nvinfo : EIATTR_SW1850030_WAR
+	.align		4
+        /*0004*/ 	.byte	0x01, 0x2a
+	.zero		2
+
+
+	//----- nvinfo : EIATTR_EXTERNS
+	.align		4
+        /*0008*/ 	.byte	0x04, 0x0f
+        /*000a*/ 	.short	(.L_54 - .L_53)
+
+
+	//   ....[0]....
+	.align		4
+.L_53:
+        /*000c*/ 	.word	index@(__kmpc_for_static_init_4)
+
+
+	//   ....[1]....
+	.align		4
+        /*0010*/ 	.word	index@(__kmpc_for_static_fini)
+
+
+	//----- nvinfo : EIATTR_CRS_STACK_SIZE
+	.align		4
+.L_54:
+        /*0014*/ 	.byte	0x04, 0x1e
+        /*0016*/ 	.short	(.L_56 - .L_55)
+.L_55:
+        /*0018*/ 	.word	0x00000230
+.L_56:
+
+
+//--------------------- .nv.callgraph             --------------------------
+	.section	.nv.callgraph,"",@"SHT_CUDA_CALLGRAPH"
+	.align	4
+	.sectionentsize	8
+	.align		4
+        /*0000*/ 	.word	0x00000000
+	.align		4
+        /*0004*/ 	.word	0xffffffff
+	.align		4
+        /*0008*/ 	.word	index@(__omp_offloading_10302_17e8471_main_l9)
+	.align		4
+        /*000c*/ 	.word	index@(__kmpc_spmd_kernel_init)
+	.align		4
+        /*0010*/ 	.word	index@(__omp_offloading_10302_17e8471_main_l9)
+	.align		4
+        /*0014*/ 	.word	index@(__kmpc_global_thread_num)
+	.align		4
+        /*0018*/ 	.word	index@(__omp_offloading_10302_17e8471_main_l9)
+	.align		4
+        /*001c*/ 	.word	index@(__omp_outlined__)
+	.align		4
+        /*0020*/ 	.word	index@(__omp_offloading_10302_17e8471_main_l9)
+	.align		4
+        /*0024*/ 	.word	index@(__kmpc_spmd_kernel_deinit_v2)
+	.align		4
+        /*0028*/ 	.word	index@(__omp_outlined__)
+	.align		4
+        /*002c*/ 	.word	index@(__kmpc_for_static_init_4)
+	.align		4
+        /*0030*/ 	.word	index@(__omp_outlined__)
+	.align		4
+        /*0034*/ 	.word	index@(__kmpc_for_static_fini)
+	.align		4
+        /*0038*/ 	.word	0x00000000
+	.align		4
+        /*003c*/ 	.word	0xfffffffe
+	.align		4
+        /*0040*/ 	.word	0x00000000
+	.align		4
+        /*0044*/ 	.word	0xfffffffd
+
+
+//--------------------- .nv.prototype             --------------------------
+	.section	.nv.prototype,"",@"SHT_CUDA_PROTOTYPE"
+	.align	4
+	.sectionentsize	8
+	.align		4
+        /*0000*/ 	.word	index@(__kmpc_spmd_kernel_init)
+	.align		4
+        /*0004*/ 	.word	str_index@("#viii")
+	.align		4
+        /*0008*/ 	.word	index@(__kmpc_global_thread_num)
+	.align		4
+        /*000c*/ 	.word	str_index@("#il")
+	.align		4
+        /*0010*/ 	.word	index@(__kmpc_spmd_kernel_deinit_v2)
+	.align		4
+        /*0014*/ 	.word	str_index@("#vi")
+	.align		4
+        /*0018*/ 	.word	index@(__kmpc_for_static_init_4)
+	.align		4
+        /*001c*/ 	.word	str_index@("#vliillllii")
+	.align		4
+        /*0020*/ 	.word	index@(__kmpc_for_static_fini)
+	.align		4
+        /*0024*/ 	.word	str_index@("#vli")
+
+
+//--------------------- .nv.constant0.__omp_offloading_10302_17e8471_main_l9 --------------------------
+	.section	.nv.constant0.__omp_offloading_10302_17e8471_main_l9,"a",@progbits
+	.align	4
+.nv.constant0.__omp_offloading_10302_17e8471_main_l9:
+	.zero		320
+	.type		_param,@"STT_CUDA_OBJECT"
+	.size		_param,(.L_5 - _param)
+	.other		_param,@"STO_CUDA_CONSTANT STV_INTERNAL"
+_param:
+	.zero		32
+.L_5:
+
+
+//--------------------- .text.__omp_offloading_10302_17e8471_main_l9 --------------------------
+	.section	.text.__omp_offloading_10302_17e8471_main_l9,"ax",@progbits
+	.sectioninfo	@"SHI_REGISTERS=25"
+	.align	32
+.text.__omp_offloading_10302_17e8471_main_l9:
+        .weak           __omp_offloading_10302_17e8471_main_l9
+        .type           __omp_offloading_10302_17e8471_main_l9,@function
+        .size           __omp_offloading_10302_17e8471_main_l9,(.L_57 - __omp_offloading_10302_17e8471_main_l9)
+        .other          __omp_offloading_10302_17e8471_main_l9,@"STO_CUDA_ENTRY STV_DEFAULT"
+__omp_offloading_10302_17e8471_main_l9:
+        /*0008*/                   MOV R1, c[0x0][0x20] ;
+        /*0010*/                   IADD32I R1, R1, -0x28 ;
+        /*0018*/                   S2R R0, SR_LMEMHIOFF ;
+        /*0028*/                   ISETP.GE.U32.AND P0, PT, R1, R0, PT ;
+        /*0030*/               @P0 BRA `(.L_6) ;
+        /*0038*/                   BPT.TRAP 0x1 ;
+.L_6:
+        /*0048*/                   IADD R0, R1, RZ ;
+        /*0050*/                   I2I.U32.U32 R0, R0 ;
+        /*0058*/                   MOV R2, R0 ;
+        /*0068*/                   MOV R3, RZ ;
+        /*0070*/                   MOV R0, R2 ;
+        /*0078*/                   MOV R3, R3 ;
+        /*0088*/                   MOV R0, R0 ;
+        /*0090*/                   MOV R3, R3 ;
+        /*0098*/                   MOV R16, c[0x0][0x4] ;
+        /*00a8*/                   MOV R2, c[0x0][0x104] ;
+        /*00b0*/                   IADD R16.CC, R0, R16 ;
+        /*00b8*/                   IADD.X R2, R3, R2 ;
+        /*00c8*/                   MOV32I R4, 0x158 ;
+        /*00d0*/                   LDC.64 R4, c[0x0][R4] ;
+        /*00d8*/                   MOV R8, R4 ;
+        /*00e8*/                   MOV R9, R5 ;
+        /*00f0*/                   MOV R8, R8 ;
+        /*00f8*/                   MOV R9, R9 ;
+        /*0108*/                   MOV32I R4, 0x150 ;
+        /*0110*/                   LDC.64 R4, c[0x0][R4] ;
+        /*0118*/                   MOV R0, R4 ;
+        /*0128*/                   MOV R4, R5 ;
+        /*0130*/                   MOV R5, R4 ;
+        /*0138*/                   MOV R4, R0 ;
+        /*0148*/                   MOV R4, R4 ;
+        /*0150*/                   MOV R5, R5 ;
+        /*0158*/                   MOV32I R6, 0x148 ;
+        /*0168*/                   LDC.64 R6, c[0x0][R6] ;
+        /*0170*/                   MOV R10, R6 ;
+        /*0178*/                   MOV R11, R7 ;
+        /*0188*/                   MOV R10, R10 ;
+        /*0190*/                   MOV R11, R11 ;
+        /*0198*/                   MOV32I R6, 0x140 ;
+        /*01a8*/                   LDC.64 R6, c[0x0][R6] ;
+        /*01b0*/                   MOV R12, R6 ;
+        /*01b8*/                   MOV R13, R7 ;
+        /*01c8*/                   MOV R12, R12 ;
+        /*01d0*/                   MOV R13, R13 ;
+        /*01d8*/                   MOV R12, R12 ;
+        /*01e8*/                   MOV R13, R13 ;
+        /*01f0*/                   MOV R8, R8 ;
+        /*01f8*/                   MOV R9, R9 ;
+        /*0208*/                   MOV R8, R8 ;
+        /*0210*/                   MOV R9, R9 ;
+        /*0218*/                   MOV R8, R8 ;
+        /*0228*/                   MOV R9, R9 ;
+        /*0230*/                   MOV R10, R10 ;
+        /*0238*/                   MOV R11, R11 ;
+        /*0248*/                   MOV R10, R10 ;
+        /*0250*/                   MOV R11, R11 ;
+        /*0258*/                   MOV R10, R10 ;
+        /*0268*/                   MOV R11, R11 ;
+        /*0270*/                   MOV R6, RZ ;
+        /*0278*/                   IADD32I R15.CC, R16, 0x20 ;
+        /*0288*/                   IADD.X R0, R2, RZ ;
+        /*0290*/                   MOV R15, R15 ;
+        /*0298*/                   MOV R0, R0 ;
+        /*02a8*/                   LEA R14.CC, R15, RZ ;
+        /*02b0*/                   LEA.HI.X P0, R15, R15, RZ, R0 ;
+        /*02b8*/                   MOV R14, R14 ;
+        /*02c8*/                   MOV R15, R15 ;
+        /*02d0*/                   ST.E [R14], R6, P0 ;
+        /*02d8*/                   IADD R15.CC, R16, RZ ;
+        /*02e8*/                   IADD.X R0, R2, RZ ;
+        /*02f0*/                   MOV R15, R15 ;
+        /*02f8*/                   MOV R0, R0 ;
+        /*0308*/                   LEA R14.CC, R15, RZ ;
+        /*0310*/                   LEA.HI.X P0, R15, R15, RZ, R0 ;
+        /*0318*/                   MOV R14, R14 ;
+        /*0328*/                   MOV R15, R15 ;
+        /*0330*/                   ST.E.64 [R14], R12, P0 ;
+        /*0338*/                   IADD32I R13.CC, R16, 0x8 ;
+        /*0348*/                   IADD.X R0, R2, RZ ;
+        /*0350*/                   MOV R13, R13 ;
+        /*0358*/                   MOV R0, R0 ;
+        /*0368*/                   LEA R12.CC, R13, RZ ;
+        /*0370*/                   LEA.HI.X P0, R13, R13, RZ, R0 ;
+        /*0378*/                   MOV R12, R12 ;
+        /*0388*/                   MOV R13, R13 ;
+        /*0390*/                   ST.E.64 [R12], R10, P0 ;
+        /*0398*/                   IADD32I R11.CC, R16, 0x10 ;
+        /*03a8*/                   IADD.X R0, R2, RZ ;
+        /*03b0*/                   MOV R11, R11 ;
+        /*03b8*/                   MOV R0, R0 ;
+        /*03c8*/                   LEA R10.CC, R11, RZ ;
+        /*03d0*/                   LEA.HI.X P0, R11, R11, RZ, R0 ;
+        /*03d8*/                   MOV R10, R10 ;
+        /*03e8*/                   MOV R11, R11 ;
+        /*03f0*/                   ST.E.64 [R10], R4, P0 ;
+        /*03f8*/                   IADD32I R5.CC, R16, 0x18 ;
+        /*0408*/                   IADD.X R0, R2, RZ ;
+        /*0410*/                   MOV R5, R5 ;
+        /*0418*/                   MOV R0, R0 ;
+        /*0428*/                   LEA R4.CC, R5, RZ ;
+        /*0430*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*0438*/                   MOV R4, R4 ;
+        /*0448*/                   MOV R5, R5 ;
+        /*0450*/                   ST.E.64 [R4], R8, P0 ;
+        /*0458*/                   IADD R18.CC, R16, RZ ;
+        /*0468*/                   IADD.X R17, R2, RZ ;
+        /*0470*/                   IADD32I R11.CC, R16, 0x8 ;
+        /*0478*/                   IADD.X R0, R2, RZ ;
+        /*0488*/                   MOV R11, R11 ;
+        /*0490*/                   MOV R0, R0 ;
+        /*0498*/                   LEA R10.CC, R11, RZ ;
+        /*04a8*/                   LEA.HI.X P0, R11, R11, RZ, R0 ;
+        /*04b0*/                   MOV R10, R10 ;
+        /*04b8*/                   MOV R11, R11 ;
+        /*04c8*/                   LD.E.64 R10, [R10], P0 ;
+        /*04d0*/                   IADD32I R22.CC, R16, 0x10 ;
+        /*04d8*/                   IADD.X R21, R2, RZ ;
+        /*04e8*/                   IADD32I R9.CC, R16, 0x18 ;
+        /*04f0*/                   IADD.X R0, R2, RZ ;
+        /*04f8*/                   MOV R9, R9 ;
+        /*0508*/                   MOV R0, R0 ;
+        /*0510*/                   LEA R8.CC, R9, RZ ;
+        /*0518*/                   LEA.HI.X P0, R9, R9, RZ, R0 ;
+        /*0528*/                   MOV R8, R8 ;
+        /*0530*/                   MOV R9, R9 ;
+        /*0538*/                   LD.E.64 R8, [R8], P0 ;
+        /*0548*/                   MOV R4, c[0x0][0x8] ;
+        /*0550*/                   MOV R4, R4 ;
+        /*0558*/                   MOV R5, R6 ;
+        /*0568*/                   MOV R6, R6 ;
+        /*0570*/                   MOV R16, R16 ;
+        /*0578*/                   MOV R2, R2 ;
+        /*0588*/                   MOV R18, R18 ;
+        /*0590*/                   MOV R17, R17 ;
+        /*0598*/                   MOV R20, R10 ;
+        /*05a8*/                   MOV R19, R11 ;
+        /*05b0*/                   MOV R20, R20 ;
+        /*05b8*/                   MOV R19, R19 ;
+        /*05c8*/                   MOV R22, R22 ;
+        /*05d0*/                   MOV R21, R21 ;
+        /*05d8*/                   MOV R24, R8 ;
+        /*05e8*/                   MOV R23, R9 ;
+        /*05f0*/                   MOV R24, R24 ;
+        /*05f8*/                   MOV R23, R23 ;
+        /*0608*/                   JCAL `(__kmpc_spmd_kernel_init) ;
+        /*0610*/                   BRA `(.L_7) ;
+.L_7:
+        /*0618*/                   MOV32I R4, 32@lo(__unnamed_2) ;
+        /*0628*/                   MOV32I R5, 32@hi(__unnamed_2) ;
+        /*0630*/                   MOV R4, R4 ;
+        /*0638*/                   MOV R5, R5 ;
+        /*0648*/                   MOV R4, R4 ;
+        /*0650*/                   MOV R5, R5 ;
+        /*0658*/                   MOV R0, R4 ;
+        /*0668*/                   MOV R5, R5 ;
+        /*0670*/                   MOV R4, R0 ;
+        /*0678*/                   MOV R5, R5 ;
+        /*0688*/                   MOV R4, R4 ;
+        /*0690*/                   MOV R5, R5 ;
+        /*0698*/                   JCAL `(__kmpc_global_thread_num) ;
+        /*06a8*/                   MOV R4, R4 ;
+        /*06b0*/                   IADD32I R7.CC, R16, 0x24 ;
+        /*06b8*/                   IADD.X R0, R2, RZ ;
+        /*06c8*/                   MOV R7, R7 ;
+        /*06d0*/                   MOV R0, R0 ;
+        /*06d8*/                   LEA R6.CC, R7, RZ ;
+        /*06e8*/                   LEA.HI.X P0, R7, R7, RZ, R0 ;
+        /*06f0*/                   MOV R6, R6 ;
+        /*06f8*/                   MOV R7, R7 ;
+        /*0708*/                   ST.E [R6], R4, P0 ;
+        /*0710*/                   IADD32I R4.CC, R16, 0x24 ;
+        /*0718*/                   IADD.X R5, R2, RZ ;
+        /*0728*/                   IADD32I R6.CC, R16, 0x20 ;
+        /*0730*/                   IADD.X R2, R2, RZ ;
+        /*0738*/                   MOV R4, R4 ;
+        /*0748*/                   MOV R5, R5 ;
+        /*0750*/                   MOV R6, R6 ;
+        /*0758*/                   MOV R7, R2 ;
+        /*0768*/                   MOV R8, R18 ;
+        /*0770*/                   MOV R9, R17 ;
+        /*0778*/                   MOV R10, R20 ;
+        /*0788*/                   MOV R11, R19 ;
+        /*0790*/                   MOV R12, R22 ;
+        /*0798*/                   MOV R13, R21 ;
+        /*07a8*/                   MOV R14, R24 ;
+        /*07b0*/                   MOV R15, R23 ;
+        /*07b8*/                   JCAL `(__omp_outlined__) ;
+        /*07c8*/                   BRA `(.L_8) ;
+.L_8:
+        /*07d0*/                   MOV R4, RZ ;
+        /*07d8*/                   MOV R4, R4 ;
+        /*07e8*/                   JCAL `(__kmpc_spmd_kernel_deinit_v2) ;
+        /*07f0*/                   BRA `(.L_9) ;
+.L_9:
+        /*07f8*/                   EXIT ;
+.L_10:
+        /*0808*/                   BRA `(.L_10) ;
+.L_57:
+
+
+//--------------------- .text.__omp_outlined__    --------------------------
+	.section	.text.__omp_outlined__,"ax",@progbits
+	.sectioninfo	@"SHI_REGISTERS=35"
+	.align	32
+.text.__omp_outlined__:
+        .type           __omp_outlined__,@function
+        .size           __omp_outlined__,(.L_58 - __omp_outlined__)
+__omp_outlined__:
+        /*0008*/                   IADD32I R1, R1, -0x80 ;
+        /*0010*/                   S2R R0, SR_LMEMHIOFF ;
+        /*0018*/                   ISETP.GE.U32.AND P0, PT, R1, R0, PT ;
+        /*0028*/               @P0 BRA `(.L_11) ;
+        /*0030*/                   BPT.TRAP 0x1 ;
+.L_11:
+        /*0038*/                   STL [R1+0x7c], R23 ;
+        /*0048*/                   STL [R1+0x78], R22 ;
+        /*0050*/                   STL [R1+0x74], R20 ;
+        /*0058*/                   STL [R1+0x70], R19 ;
+        /*0068*/                   STL [R1+0x6c], R18 ;
+        /*0070*/                   STL [R1+0x68], R17 ;
+        /*0078*/                   STL [R1+0x64], R16 ;
+        /*0088*/                   STL [R1+0x60], R2 ;
+        /*0090*/                   MOV R5, R5 ;
+        /*0098*/                   MOV R4, R4 ;
+        /*00a8*/                   MOV R7, R7 ;
+        /*00b0*/                   MOV R6, R6 ;
+        /*00b8*/                   MOV R9, R9 ;
+        /*00c8*/                   MOV R8, R8 ;
+        /*00d0*/                   MOV R11, R11 ;
+        /*00d8*/                   MOV R10, R10 ;
+        /*00e8*/                   MOV R13, R13 ;
+        /*00f0*/                   MOV R12, R12 ;
+        /*00f8*/                   MOV R15, R15 ;
+        /*0108*/                   MOV R14, R14 ;
+        /*0110*/                   IADD32I R0, R1, 0x8 ;
+        /*0118*/                   I2I.U32.U32 R0, R0 ;
+        /*0128*/                   MOV R32, R0 ;
+        /*0130*/                   MOV R33, RZ ;
+        /*0138*/                   MOV R0, R32 ;
+        /*0148*/                   MOV R33, R33 ;
+        /*0150*/                   MOV R32, R0 ;
+        /*0158*/                   MOV R33, R33 ;
+        /*0168*/                   MOV R3, c[0x0][0x4] ;
+        /*0170*/                   MOV R0, c[0x0][0x104] ;
+        /*0178*/                   IADD R3.CC, R32, R3 ;
+        /*0188*/                   IADD.X R0, R33, R0 ;
+        /*0190*/                   MOV R14, R14 ;
+        /*0198*/                   MOV R15, R15 ;
+        /*01a8*/                   MOV R12, R12 ;
+        /*01b0*/                   MOV R13, R13 ;
+        /*01b8*/                   MOV R10, R10 ;
+        /*01c8*/                   MOV R11, R11 ;
+        /*01d0*/                   MOV R8, R8 ;
+        /*01d8*/                   MOV R9, R9 ;
+        /*01e8*/                   MOV R6, R6 ;
+        /*01f0*/                   MOV R7, R7 ;
+        /*01f8*/                   MOV R4, R4 ;
+        /*0208*/                   MOV R5, R5 ;
+        /*0210*/                   IADD R33.CC, R3, RZ ;
+        /*0218*/                   IADD.X R34, R0, RZ ;
+        /*0228*/                   MOV R33, R33 ;
+        /*0230*/                   MOV R34, R34 ;
+        /*0238*/                   LEA R32.CC, R33, RZ ;
+        /*0248*/                   LEA.HI.X P0, R33, R33, RZ, R34 ;
+        /*0250*/                   MOV R32, R32 ;
+        /*0258*/                   MOV R33, R33 ;
+        /*0268*/                   ST.E.64 [R32], R4, P0 ;
+        /*0270*/                   IADD32I R5.CC, R3, 0x8 ;
+        /*0278*/                   IADD.X R32, R0, RZ ;
+        /*0288*/                   MOV R5, R5 ;
+        /*0290*/                   MOV R32, R32 ;
+        /*0298*/                   LEA R4.CC, R5, RZ ;
+        /*02a8*/                   LEA.HI.X P0, R5, R5, RZ, R32 ;
+        /*02b0*/                   MOV R4, R4 ;
+        /*02b8*/                   MOV R5, R5 ;
+        /*02c8*/                   ST.E.64 [R4], R6, P0 ;
+        /*02d0*/                   IADD32I R5.CC, R3, 0x10 ;
+        /*02d8*/                   IADD.X R6, R0, RZ ;
+        /*02e8*/                   MOV R5, R5 ;
+        /*02f0*/                   MOV R6, R6 ;
+        /*02f8*/                   LEA R4.CC, R5, RZ ;
+        /*0308*/                   LEA.HI.X P0, R5, R5, RZ, R6 ;
+        /*0310*/                   MOV R4, R4 ;
+        /*0318*/                   MOV R5, R5 ;
+        /*0328*/                   ST.E.64 [R4], R8, P0 ;
+        /*0330*/                   IADD32I R5.CC, R3, 0x18 ;
+        /*0338*/                   IADD.X R6, R0, RZ ;
+        /*0348*/                   MOV R5, R5 ;
+        /*0350*/                   MOV R6, R6 ;
+        /*0358*/                   LEA R4.CC, R5, RZ ;
+        /*0368*/                   LEA.HI.X P0, R5, R5, RZ, R6 ;
+        /*0370*/                   MOV R4, R4 ;
+        /*0378*/                   MOV R5, R5 ;
+        /*0388*/                   ST.E.64 [R4], R10, P0 ;
+        /*0390*/                   IADD32I R5.CC, R3, 0x20 ;
+        /*0398*/                   IADD.X R6, R0, RZ ;
+        /*03a8*/                   MOV R5, R5 ;
+        /*03b0*/                   MOV R6, R6 ;
+        /*03b8*/                   LEA R4.CC, R5, RZ ;
+        /*03c8*/                   LEA.HI.X P0, R5, R5, RZ, R6 ;
+        /*03d0*/                   MOV R4, R4 ;
+        /*03d8*/                   MOV R5, R5 ;
+        /*03e8*/                   ST.E.64 [R4], R12, P0 ;
+        /*03f0*/                   IADD32I R5.CC, R3, 0x28 ;
+        /*03f8*/                   IADD.X R6, R0, RZ ;
+        /*0408*/                   MOV R5, R5 ;
+        /*0410*/                   MOV R6, R6 ;
+        /*0418*/                   LEA R4.CC, R5, RZ ;
+        /*0428*/                   LEA.HI.X P0, R5, R5, RZ, R6 ;
+        /*0430*/                   MOV R4, R4 ;
+        /*0438*/                   MOV R5, R5 ;
+        /*0448*/                   ST.E.64 [R4], R14, P0 ;
+        /*0450*/                   IADD32I R11.CC, R3, 0x10 ;
+        /*0458*/                   IADD.X R4, R0, RZ ;
+        /*0468*/                   MOV R11, R11 ;
+        /*0470*/                   MOV R4, R4 ;
+        /*0478*/                   LEA R10.CC, R11, RZ ;
+        /*0488*/                   LEA.HI.X P0, R11, R11, RZ, R4 ;
+        /*0490*/                   MOV R10, R10 ;
+        /*0498*/                   MOV R11, R11 ;
+        /*04a8*/                   LD.E.64 R10, [R10], P0 ;
+        /*04b0*/                   IADD32I R9.CC, R3, 0x18 ;
+        /*04b8*/                   IADD.X R4, R0, RZ ;
+        /*04c8*/                   MOV R9, R9 ;
+        /*04d0*/                   MOV R4, R4 ;
+        /*04d8*/                   LEA R8.CC, R9, RZ ;
+        /*04e8*/                   LEA.HI.X P0, R9, R9, RZ, R4 ;
+        /*04f0*/                   MOV R8, R8 ;
+        /*04f8*/                   MOV R9, R9 ;
+        /*0508*/                   LD.E.64 R8, [R8], P0 ;
+        /*0510*/                   IADD32I R7.CC, R3, 0x20 ;
+        /*0518*/                   IADD.X R4, R0, RZ ;
+        /*0528*/                   MOV R7, R7 ;
+        /*0530*/                   MOV R4, R4 ;
+        /*0538*/                   LEA R6.CC, R7, RZ ;
+        /*0548*/                   LEA.HI.X P0, R7, R7, RZ, R4 ;
+        /*0550*/                   MOV R6, R6 ;
+        /*0558*/                   MOV R7, R7 ;
+        /*0568*/                   LD.E.64 R6, [R6], P0 ;
+        /*0570*/                   IADD32I R5.CC, R3, 0x28 ;
+        /*0578*/                   IADD.X R12, R0, RZ ;
+        /*0588*/                   MOV R5, R5 ;
+        /*0590*/                   MOV R12, R12 ;
+        /*0598*/                   LEA R4.CC, R5, RZ ;
+        /*05a8*/                   LEA.HI.X P0, R5, R5, RZ, R12 ;
+        /*05b0*/                   MOV R4, R4 ;
+        /*05b8*/                   MOV R5, R5 ;
+        /*05c8*/                   LD.E.64 R4, [R4], P0 ;
+        /*05d0*/                   MOV R12, R10 ;
+        /*05d8*/                   MOV R10, R11 ;
+        /*05e8*/                   MOV R11, R12 ;
+        /*05f0*/                   MOV R12, R10 ;
+        /*05f8*/                   LEA R10.CC, R11, RZ ;
+        /*0608*/                   LEA.HI.X P0, R11, R11, RZ, R12 ;
+        /*0610*/                   MOV R10, R10 ;
+        /*0618*/                   MOV R11, R11 ;
+        /*0628*/                   LD.E R12, [R10], P0 ;
+        /*0630*/                   IADD32I R11.CC, R3, 0x38 ;
+        /*0638*/                   IADD.X R13, R0, RZ ;
+        /*0648*/                   MOV R11, R11 ;
+        /*0650*/                   MOV R13, R13 ;
+        /*0658*/                   LEA R10.CC, R11, RZ ;
+        /*0668*/                   LEA.HI.X P0, R11, R11, RZ, R13 ;
+        /*0670*/                   MOV R10, R10 ;
+        /*0678*/                   MOV R11, R11 ;
+        /*0688*/                   ST.E [R10], R12, P0 ;
+        /*0690*/                   IADD32I R11.CC, R3, 0x38 ;
+        /*0698*/                   IADD.X R12, R0, RZ ;
+        /*06a8*/                   MOV R11, R11 ;
+        /*06b0*/                   MOV R12, R12 ;
+        /*06b8*/                   LEA R10.CC, R11, RZ ;
+        /*06c8*/                   LEA.HI.X P0, R11, R11, RZ, R12 ;
+        /*06d0*/                   MOV R10, R10 ;
+        /*06d8*/                   MOV R11, R11 ;
+        /*06e8*/                   LD.E R10, [R10], P0 ;
+        /*06f0*/                   IADD32I R12, R10, -0x1 ;
+        /*06f8*/                   IADD32I R11.CC, R3, 0x3c ;
+        /*0708*/                   IADD.X R13, R0, RZ ;
+        /*0710*/                   MOV R11, R11 ;
+        /*0718*/                   MOV R13, R13 ;
+        /*0728*/                   LEA R10.CC, R11, RZ ;
+        /*0730*/                   LEA.HI.X P0, R11, R11, RZ, R13 ;
+        /*0738*/                   MOV R10, R10 ;
+        /*0748*/                   MOV R11, R11 ;
+        /*0750*/                   ST.E [R10], R12, P0 ;
+        /*0758*/                   MOV R13, RZ ;
+        /*0768*/                   IADD32I R11.CC, R3, 0x40 ;
+        /*0770*/                   IADD.X R12, R0, RZ ;
+        /*0778*/                   MOV R11, R11 ;
+        /*0788*/                   MOV R12, R12 ;
+        /*0790*/                   LEA R10.CC, R11, RZ ;
+        /*0798*/                   LEA.HI.X P0, R11, R11, RZ, R12 ;
+        /*07a8*/                   MOV R10, R10 ;
+        /*07b0*/                   MOV R11, R11 ;
+        /*07b8*/                   ST.E [R10], R13, P0 ;
+        /*07c8*/                   IADD32I R11.CC, R3, 0x38 ;
+        /*07d0*/                   IADD.X R12, R0, RZ ;
+        /*07d8*/                   MOV R11, R11 ;
+        /*07e8*/                   MOV R12, R12 ;
+        /*07f0*/                   LEA R10.CC, R11, RZ ;
+        /*07f8*/                   LEA.HI.X P0, R11, R11, RZ, R12 ;
+        /*0808*/                   MOV R10, R10 ;
+        /*0810*/                   MOV R11, R11 ;
+        /*0818*/                   LD.E R10, [R10], P0 ;
+        /*0828*/                   ISETP.LT.AND P0, PT, R10, 0x1, PT ;
+        /*0830*/                   MOV R16, R3 ;
+        /*0838*/                   MOV R2, R0 ;
+        /*0848*/                   MOV R0, R8 ;
+        /*0850*/                   MOV R8, R9 ;
+        /*0858*/                   MOV R18, R0 ;
+        /*0868*/                   MOV R17, R8 ;
+        /*0870*/                   MOV R22, R6 ;
+        /*0878*/                   MOV R23, R7 ;
+        /*0888*/                   MOV R0, R4 ;
+        /*0890*/                   MOV R4, R5 ;
+        /*0898*/                   MOV R20, R0 ;
+        /*08a8*/                   MOV R19, R4 ;
+        /*08b0*/               @P0 BRA `(.L_12) ;
+        /*08b8*/                   BRA `(.L_13) ;
+.L_13:
+        /*08c8*/                   MOV R6, RZ ;
+        /*08d0*/                   IADD32I R5.CC, R16, 0x44 ;
+        /*08d8*/                   IADD.X R0, R2, RZ ;
+        /*08e8*/                   MOV R5, R5 ;
+        /*08f0*/                   MOV R0, R0 ;
+        /*08f8*/                   LEA R4.CC, R5, RZ ;
+        /*0908*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*0910*/                   MOV R4, R4 ;
+        /*0918*/                   MOV R5, R5 ;
+        /*0928*/                   ST.E [R4], R6, P0 ;
+        /*0930*/                   IADD32I R5.CC, R16, 0x3c ;
+        /*0938*/                   IADD.X R0, R2, RZ ;
+        /*0948*/                   MOV R5, R5 ;
+        /*0950*/                   MOV R0, R0 ;
+        /*0958*/                   LEA R4.CC, R5, RZ ;
+        /*0968*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*0970*/                   MOV R4, R4 ;
+        /*0978*/                   MOV R5, R5 ;
+        /*0988*/                   LD.E R0, [R4], P0 ;
+        /*0990*/                   IADD32I R5.CC, R16, 0x48 ;
+        /*0998*/                   IADD.X R3, R2, RZ ;
+        /*09a8*/                   MOV R5, R5 ;
+        /*09b0*/                   MOV R3, R3 ;
+        /*09b8*/                   LEA R4.CC, R5, RZ ;
+        /*09c8*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*09d0*/                   MOV R4, R4 ;
+        /*09d8*/                   MOV R5, R5 ;
+        /*09e8*/                   ST.E [R4], R0, P0 ;
+        /*09f0*/                   MOV32I R0, 0x1 ;
+        /*09f8*/                   IADD32I R5.CC, R16, 0x4c ;
+        /*0a08*/                   IADD.X R3, R2, RZ ;
+        /*0a10*/                   MOV R5, R5 ;
+        /*0a18*/                   MOV R3, R3 ;
+        /*0a28*/                   LEA R4.CC, R5, RZ ;
+        /*0a30*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*0a38*/                   MOV R4, R4 ;
+        /*0a48*/                   MOV R5, R5 ;
+        /*0a50*/                   ST.E [R4], R0, P0 ;
+        /*0a58*/                   IADD32I R5.CC, R16, 0x50 ;
+        /*0a68*/                   IADD.X R3, R2, RZ ;
+        /*0a70*/                   MOV R5, R5 ;
+        /*0a78*/                   MOV R3, R3 ;
+        /*0a88*/                   LEA R4.CC, R5, RZ ;
+        /*0a90*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*0a98*/                   MOV R4, R4 ;
+        /*0aa8*/                   MOV R5, R5 ;
+        /*0ab0*/                   ST.E [R4], R6, P0 ;
+        /*0ab8*/                   IADD R5.CC, R16, RZ ;
+        /*0ac8*/                   IADD.X R3, R2, RZ ;
+        /*0ad0*/                   MOV R5, R5 ;
+        /*0ad8*/                   MOV R3, R3 ;
+        /*0ae8*/                   LEA R4.CC, R5, RZ ;
+        /*0af0*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*0af8*/                   MOV R4, R4 ;
+        /*0b08*/                   MOV R5, R5 ;
+        /*0b10*/                   LD.E.64 R4, [R4], P0 ;
+        /*0b18*/                   MOV R7, R4 ;
+        /*0b28*/                   MOV R3, R5 ;
+        /*0b30*/                   MOV R7, R7 ;
+        /*0b38*/                   MOV R3, R3 ;
+        /*0b48*/                   LEA R6.CC, R7, RZ ;
+        /*0b50*/                   LEA.HI.X P0, R7, R7, RZ, R3 ;
+        /*0b58*/                   MOV R6, R6 ;
+        /*0b68*/                   MOV R7, R7 ;
+        /*0b70*/                   LD.E R6, [R6], P0 ;
+        /*0b78*/                   MOV32I R4, 32@lo(__unnamed_1) ;
+        /*0b88*/                   MOV32I R5, 32@hi(__unnamed_1) ;
+        /*0b90*/                   MOV R4, R4 ;
+        /*0b98*/                   MOV R5, R5 ;
+        /*0ba8*/                   MOV R4, R4 ;
+        /*0bb0*/                   MOV R5, R5 ;
+        /*0bb8*/                   MOV R3, R4 ;
+        /*0bc8*/                   MOV R5, R5 ;
+        /*0bd0*/                   MOV R4, R3 ;
+        /*0bd8*/                   MOV R5, R5 ;
+        /*0be8*/                   MOV32I R7, 0x21 ;
+        /*0bf0*/                   IADD32I R8.CC, R16, 0x50 ;
+        /*0bf8*/                   IADD.X R9, R2, RZ ;
+        /*0c08*/                   IADD32I R10.CC, R16, 0x44 ;
+        /*0c10*/                   IADD.X R11, R2, RZ ;
+        /*0c18*/                   IADD32I R12.CC, R16, 0x48 ;
+        /*0c28*/                   IADD.X R13, R2, RZ ;
+        /*0c30*/                   IADD32I R14.CC, R16, 0x4c ;
+        /*0c38*/                   IADD.X R15, R2, RZ ;
+        /*0c48*/                   MOV R4, R4 ;
+        /*0c50*/                   MOV R5, R5 ;
+        /*0c58*/                   MOV R6, R6 ;
+        /*0c68*/                   MOV R7, R7 ;
+        /*0c70*/                   MOV R8, R8 ;
+        /*0c78*/                   MOV R9, R9 ;
+        /*0c88*/                   MOV R10, R10 ;
+        /*0c90*/                   MOV R11, R11 ;
+        /*0c98*/                   MOV R12, R12 ;
+        /*0ca8*/                   MOV R13, R13 ;
+        /*0cb0*/                   MOV R14, R14 ;
+        /*0cb8*/                   MOV R15, R15 ;
+        /*0cc8*/                   STL [R1], R0 ;
+        /*0cd0*/                   STL [R1+0x4], R0 ;
+        /*0cd8*/                   JCAL `(__kmpc_for_static_init_4) ;
+        /*0ce8*/                   SSY `(.L_14) ;
+        /*0cf0*/                   BRA `(.L_15) ;
+.L_15:
+        /*0cf8*/                   IADD32I R5.CC, R16, 0x48 ;
+        /*0d08*/                   IADD.X R0, R2, RZ ;
+        /*0d10*/                   MOV R5, R5 ;
+        /*0d18*/                   MOV R0, R0 ;
+        /*0d28*/                   LEA R4.CC, R5, RZ ;
+        /*0d30*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*0d38*/                   MOV R4, R4 ;
+        /*0d48*/                   MOV R5, R5 ;
+        /*0d50*/                   LD.E R0, [R4], P0 ;
+        /*0d58*/                   IADD32I R5.CC, R16, 0x3c ;
+        /*0d68*/                   IADD.X R3, R2, RZ ;
+        /*0d70*/                   MOV R5, R5 ;
+        /*0d78*/                   MOV R3, R3 ;
+        /*0d88*/                   LEA R4.CC, R5, RZ ;
+        /*0d90*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*0d98*/                   MOV R4, R4 ;
+        /*0da8*/                   MOV R5, R5 ;
+        /*0db0*/                   LD.E R4, [R4], P0 ;
+        /*0db8*/                   ISETP.LE.AND P0, PT, R0, R4, PT ;
+        /*0dc8*/                   SSY `(.L_16) ;
+        /*0dd0*/               @P0 BRA `(.L_17) ;
+        /*0dd8*/                   BRA `(.L_18) ;
+.L_18:
+        /*0de8*/                   IADD32I R5.CC, R16, 0x3c ;
+        /*0df0*/                   IADD.X R0, R2, RZ ;
+        /*0df8*/                   MOV R5, R5 ;
+        /*0e08*/                   MOV R0, R0 ;
+        /*0e10*/                   LEA R4.CC, R5, RZ ;
+        /*0e18*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*0e28*/                   MOV R4, R4 ;
+        /*0e30*/                   MOV R5, R5 ;
+        /*0e38*/                   LD.E R4, [R4], P0 ;
+        /*0e48*/                   MOV R4, R4 ;
+        /*0e50*/                   MOV R4, R4 ;
+        /*0e58*/                   SYNC                                  (*"TARGET= .L_16 "*);
+.L_17:
+        /*0e68*/                   IADD32I R5.CC, R16, 0x48 ;
+        /*0e70*/                   IADD.X R0, R2, RZ ;
+        /*0e78*/                   MOV R5, R5 ;
+        /*0e88*/                   MOV R0, R0 ;
+        /*0e90*/                   LEA R4.CC, R5, RZ ;
+        /*0e98*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*0ea8*/                   MOV R4, R4 ;
+        /*0eb0*/                   MOV R5, R5 ;
+        /*0eb8*/                   LD.E R4, [R4], P0 ;
+        /*0ec8*/                   MOV R4, R4 ;
+        /*0ed0*/                   MOV R4, R4 ;
+        /*0ed8*/                   SYNC                                  (*"TARGET= .L_16 "*);
+.L_16:
+        /*0ef0*/                   MOV R0, R4 ;
+        /*0ef8*/                   IADD32I R5.CC, R16, 0x48 ;
+        /*0f08*/                   IADD.X R3, R2, RZ ;
+        /*0f10*/                   MOV R5, R5 ;
+        /*0f18*/                   MOV R3, R3 ;
+        /*0f28*/                   LEA R4.CC, R5, RZ ;
+        /*0f30*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*0f38*/                   MOV R4, R4 ;
+        /*0f48*/                   MOV R5, R5 ;
+        /*0f50*/                   ST.E [R4], R0, P0 ;
+        /*0f58*/                   IADD32I R5.CC, R16, 0x44 ;
+        /*0f68*/                   IADD.X R0, R2, RZ ;
+        /*0f70*/                   MOV R5, R5 ;
+        /*0f78*/                   MOV R0, R0 ;
+        /*0f88*/                   LEA R4.CC, R5, RZ ;
+        /*0f90*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*0f98*/                   MOV R4, R4 ;
+        /*0fa8*/                   MOV R5, R5 ;
+        /*0fb0*/                   LD.E R0, [R4], P0 ;
+        /*0fb8*/                   IADD32I R5.CC, R16, 0x30 ;
+        /*0fc8*/                   IADD.X R3, R2, RZ ;
+        /*0fd0*/                   MOV R5, R5 ;
+        /*0fd8*/                   MOV R3, R3 ;
+        /*0fe8*/                   LEA R4.CC, R5, RZ ;
+        /*0ff0*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*0ff8*/                   MOV R4, R4 ;
+        /*1008*/                   MOV R5, R5 ;
+        /*1010*/                   ST.E [R4], R0, P0 ;
+        /*1018*/                   IADD32I R5.CC, R16, 0x30 ;
+        /*1028*/                   IADD.X R0, R2, RZ ;
+        /*1030*/                   MOV R5, R5 ;
+        /*1038*/                   MOV R0, R0 ;
+        /*1048*/                   LEA R4.CC, R5, RZ ;
+        /*1050*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*1058*/                   MOV R4, R4 ;
+        /*1068*/                   MOV R5, R5 ;
+        /*1070*/                   LD.E R0, [R4], P0 ;
+        /*1078*/                   IADD32I R5.CC, R16, 0x48 ;
+        /*1088*/                   IADD.X R3, R2, RZ ;
+        /*1090*/                   MOV R5, R5 ;
+        /*1098*/                   MOV R3, R3 ;
+        /*10a8*/                   LEA R4.CC, R5, RZ ;
+        /*10b0*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*10b8*/                   MOV R4, R4 ;
+        /*10c8*/                   MOV R5, R5 ;
+        /*10d0*/                   LD.E R4, [R4], P0 ;
+        /*10d8*/                   ISETP.GT.AND P0, PT, R0, R4, PT ;
+        /*10e8*/               @P0 SYNC                                  (*"TARGET= .L_14 "*);
+        /*10f0*/                   BRA `(.L_19) ;
+.L_19:
+        /*10f8*/                   SSY `(.L_20) ;
+        /*1108*/                   BRA `(.L_21) ;
+.L_21:
+        /*1110*/                   IADD32I R5.CC, R16, 0x30 ;
+        /*1118*/                   IADD.X R0, R2, RZ ;
+        /*1128*/                   MOV R5, R5 ;
+        /*1130*/                   MOV R0, R0 ;
+        /*1138*/                   LEA R4.CC, R5, RZ ;
+        /*1148*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*1150*/                   MOV R4, R4 ;
+        /*1158*/                   MOV R5, R5 ;
+        /*1168*/                   LD.E R0, [R4], P0 ;
+        /*1170*/                   IADD32I R5.CC, R16, 0x48 ;
+        /*1178*/                   IADD.X R3, R2, RZ ;
+        /*1188*/                   MOV R5, R5 ;
+        /*1190*/                   MOV R3, R3 ;
+        /*1198*/                   LEA R4.CC, R5, RZ ;
+        /*11a8*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*11b0*/                   MOV R4, R4 ;
+        /*11b8*/                   MOV R5, R5 ;
+        /*11c8*/                   LD.E R4, [R4], P0 ;
+        /*11d0*/                   ISETP.GT.AND P0, PT, R0, R4, PT ;
+        /*11d8*/               @P0 SYNC                                  (*"TARGET= .L_20 "*);
+        /*11e8*/                   BRA `(.L_22) ;
+.L_22:
+        /*11f0*/                   IADD32I R5.CC, R16, 0x30 ;
+        /*11f8*/                   IADD.X R0, R2, RZ ;
+        /*1208*/                   MOV R5, R5 ;
+        /*1210*/                   MOV R0, R0 ;
+        /*1218*/                   LEA R4.CC, R5, RZ ;
+        /*1228*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*1230*/                   MOV R4, R4 ;
+        /*1238*/                   MOV R5, R5 ;
+        /*1248*/                   LD.E R0, [R4], P0 ;
+        /*1250*/                   IADD32I R5.CC, R16, 0x54 ;
+        /*1258*/                   IADD.X R3, R2, RZ ;
+        /*1268*/                   MOV R5, R5 ;
+        /*1270*/                   MOV R3, R3 ;
+        /*1278*/                   LEA R4.CC, R5, RZ ;
+        /*1288*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*1290*/                   MOV R4, R4 ;
+        /*1298*/                   MOV R5, R5 ;
+        /*12a8*/                   ST.E [R4], R0, P0 ;
+        /*12b0*/                   MOV R5, R22 ;
+        /*12b8*/                   MOV R0, R23 ;
+        /*12c8*/                   MOV R5, R5 ;
+        /*12d0*/                   MOV R0, R0 ;
+        /*12d8*/                   LEA R4.CC, R5, RZ ;
+        /*12e8*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*12f0*/                   MOV R4, R4 ;
+        /*12f8*/                   MOV R5, R5 ;
+        /*1308*/                   LD.E R0, [R4], P0 ;
+        /*1310*/                   IADD32I R5.CC, R16, 0x54 ;
+        /*1318*/                   IADD.X R3, R2, RZ ;
+        /*1328*/                   MOV R5, R5 ;
+        /*1330*/                   MOV R3, R3 ;
+        /*1338*/                   LEA R4.CC, R5, RZ ;
+        /*1348*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*1350*/                   MOV R4, R4 ;
+        /*1358*/                   MOV R5, R5 ;
+        /*1368*/                   LD.E R4, [R4], P0 ;
+        /*1370*/                   I2I.S32.S32 R4, R4 ;
+        /*1378*/                   SHR R3, R4, 0x1f ;
+        /*1388*/                   MOV R4, R4 ;
+        /*1390*/                   MOV R3, R3 ;
+        /*1398*/                   SHF.L.U64 R7, R4, 0x2, R3 ;
+        /*13a8*/                   SHL R6, R4, 0x2 ;
+        /*13b0*/                   IADD R5.CC, R20, R6 ;
+        /*13b8*/                   IADD.X R3, R19, R7 ;
+        /*13c8*/                   MOV R5, R5 ;
+        /*13d0*/                   MOV R3, R3 ;
+        /*13d8*/                   LEA R4.CC, R5, RZ ;
+        /*13e8*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*13f0*/                   MOV R4, R4 ;
+        /*13f8*/                   MOV R5, R5 ;
+        /*1408*/                   LD.E R4, [R4], P0 ;
+        /*1410*/                   FMUL R0, R0, R4 ;
+        /*1418*/                   IADD R6.CC, R18, R6 ;
+        /*1428*/                   IADD.X R3, R17, R7 ;
+        /*1430*/                   MOV R5, R6 ;
+        /*1438*/                   MOV R3, R3 ;
+        /*1448*/                   LEA R4.CC, R5, RZ ;
+        /*1450*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*1458*/                   MOV R4, R4 ;
+        /*1468*/                   MOV R5, R5 ;
+        /*1470*/                   LD.E R4, [R4], P0 ;
+        /*1478*/                   FADD R0, R4, R0 ;
+        /*1488*/                   MOV R5, R6 ;
+        /*1490*/                   MOV R3, R3 ;
+        /*1498*/                   LEA R4.CC, R5, RZ ;
+        /*14a8*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*14b0*/                   MOV R4, R4 ;
+        /*14b8*/                   MOV R5, R5 ;
+        /*14c8*/                   ST.E [R4], R0, P0 ;
+        /*14d0*/                   BRA `(.L_23) ;
+.L_23:
+        /*14d8*/                   BRA `(.L_24) ;
+.L_24:
+        /*14e8*/                   IADD32I R5.CC, R16, 0x30 ;
+        /*14f0*/                   IADD.X R0, R2, RZ ;
+        /*14f8*/                   MOV R5, R5 ;
+        /*1508*/                   MOV R0, R0 ;
+        /*1510*/                   LEA R4.CC, R5, RZ ;
+        /*1518*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*1528*/                   MOV R4, R4 ;
+        /*1530*/                   MOV R5, R5 ;
+        /*1538*/                   LD.E R4, [R4], P0 ;
+        /*1548*/                   IADD32I R0, R4, 0x1 ;
+        /*1550*/                   IADD32I R5.CC, R16, 0x30 ;
+        /*1558*/                   IADD.X R3, R2, RZ ;
+        /*1568*/                   MOV R5, R5 ;
+        /*1570*/                   MOV R3, R3 ;
+        /*1578*/                   LEA R4.CC, R5, RZ ;
+        /*1588*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*1590*/                   MOV R4, R4 ;
+        /*1598*/                   MOV R5, R5 ;
+        /*15a8*/                   ST.E [R4], R0, P0 ;
+        /*15b0*/                   BRA `(.L_21) ;
+.L_20:
+        /*15b8*/                   BRA `(.L_25) ;
+.L_25:
+        /*15c8*/                   IADD32I R5.CC, R16, 0x44 ;
+        /*15d0*/                   IADD.X R0, R2, RZ ;
+        /*15d8*/                   MOV R5, R5 ;
+        /*15e8*/                   MOV R0, R0 ;
+        /*15f0*/                   LEA R4.CC, R5, RZ ;
+        /*15f8*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*1608*/                   MOV R4, R4 ;
+        /*1610*/                   MOV R5, R5 ;
+        /*1618*/                   LD.E R0, [R4], P0 ;
+        /*1628*/                   IADD32I R5.CC, R16, 0x4c ;
+        /*1630*/                   IADD.X R3, R2, RZ ;
+        /*1638*/                   MOV R5, R5 ;
+        /*1648*/                   MOV R3, R3 ;
+        /*1650*/                   LEA R4.CC, R5, RZ ;
+        /*1658*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*1668*/                   MOV R4, R4 ;
+        /*1670*/                   MOV R5, R5 ;
+        /*1678*/                   LD.E R4, [R4], P0 ;
+        /*1688*/                   IADD R0, R0, R4 ;
+        /*1690*/                   IADD32I R5.CC, R16, 0x44 ;
+        /*1698*/                   IADD.X R3, R2, RZ ;
+        /*16a8*/                   MOV R5, R5 ;
+        /*16b0*/                   MOV R3, R3 ;
+        /*16b8*/                   LEA R4.CC, R5, RZ ;
+        /*16c8*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*16d0*/                   MOV R4, R4 ;
+        /*16d8*/                   MOV R5, R5 ;
+        /*16e8*/                   ST.E [R4], R0, P0 ;
+        /*16f0*/                   IADD32I R5.CC, R16, 0x48 ;
+        /*16f8*/                   IADD.X R0, R2, RZ ;
+        /*1708*/                   MOV R5, R5 ;
+        /*1710*/                   MOV R0, R0 ;
+        /*1718*/                   LEA R4.CC, R5, RZ ;
+        /*1728*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*1730*/                   MOV R4, R4 ;
+        /*1738*/                   MOV R5, R5 ;
+        /*1748*/                   LD.E R0, [R4], P0 ;
+        /*1750*/                   IADD32I R5.CC, R16, 0x4c ;
+        /*1758*/                   IADD.X R3, R2, RZ ;
+        /*1768*/                   MOV R5, R5 ;
+        /*1770*/                   MOV R3, R3 ;
+        /*1778*/                   LEA R4.CC, R5, RZ ;
+        /*1788*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*1790*/                   MOV R4, R4 ;
+        /*1798*/                   MOV R5, R5 ;
+        /*17a8*/                   LD.E R4, [R4], P0 ;
+        /*17b0*/                   IADD R0, R0, R4 ;
+        /*17b8*/                   IADD32I R5.CC, R16, 0x48 ;
+        /*17c8*/                   IADD.X R3, R2, RZ ;
+        /*17d0*/                   MOV R5, R5 ;
+        /*17d8*/                   MOV R3, R3 ;
+        /*17e8*/                   LEA R4.CC, R5, RZ ;
+        /*17f0*/                   LEA.HI.X P0, R5, R5, RZ, R3 ;
+        /*17f8*/                   MOV R4, R4 ;
+        /*1808*/                   MOV R5, R5 ;
+        /*1810*/                   ST.E [R4], R0, P0 ;
+        /*1818*/                   BRA `(.L_15) ;
+.L_14:
+        /*1828*/                   IADD R5.CC, R16, RZ ;
+        /*1830*/                   IADD.X R0, R2, RZ ;
+        /*1838*/                   MOV R5, R5 ;
+        /*1848*/                   MOV R0, R0 ;
+        /*1850*/                   LEA R4.CC, R5, RZ ;
+        /*1858*/                   LEA.HI.X P0, R5, R5, RZ, R0 ;
+        /*1868*/                   MOV R4, R4 ;
+        /*1870*/                   MOV R5, R5 ;
+        /*1878*/                   LD.E.64 R4, [R4], P0 ;
+        /*1888*/                   MOV R7, R4 ;
+        /*1890*/                   MOV R0, R5 ;
+        /*1898*/                   MOV R7, R7 ;
+        /*18a8*/                   MOV R0, R0 ;
+        /*18b0*/                   LEA R6.CC, R7, RZ ;
+        /*18b8*/                   LEA.HI.X P0, R7, R7, RZ, R0 ;
+        /*18c8*/                   MOV R6, R6 ;
+        /*18d0*/                   MOV R7, R7 ;
+        /*18d8*/                   LD.E R6, [R6], P0 ;
+        /*18e8*/                   MOV32I R4, 32@lo(__unnamed_1) ;
+        /*18f0*/                   MOV32I R5, 32@hi(__unnamed_1) ;
+        /*18f8*/                   MOV R4, R4 ;
+        /*1908*/                   MOV R5, R5 ;
+        /*1910*/                   MOV R4, R4 ;
+        /*1918*/                   MOV R5, R5 ;
+        /*1928*/                   MOV R0, R4 ;
+        /*1930*/                   MOV R5, R5 ;
+        /*1938*/                   MOV R4, R0 ;
+        /*1948*/                   MOV R5, R5 ;
+        /*1950*/                   MOV R4, R4 ;
+        /*1958*/                   MOV R5, R5 ;
+        /*1968*/                   MOV R6, R6 ;
+        /*1970*/                   JCAL `(__kmpc_for_static_fini) ;
+        /*1978*/                   BRA `(.L_12) ;
+.L_12:
+        /*1988*/                   LDL R2, [R1+0x60] ;
+        /*1990*/                   LDL R16, [R1+0x64] ;
+        /*1998*/                   LDL R17, [R1+0x68] ;
+        /*19a8*/                   LDL R18, [R1+0x6c] ;
+        /*19b0*/                   LDL R19, [R1+0x70] ;
+        /*19b8*/                   LDL R20, [R1+0x74] ;
+        /*19c8*/                   LDL R22, [R1+0x78] ;
+        /*19d0*/                   LDL R23, [R1+0x7c] ;
+        /*19d8*/                   IADD32I R1, R1, 0x80 ;
+        /*19e8*/                   RET ;
+.L_26:
+        /*19f0*/                   BRA `(.L_26) ;
+.L_58:
+
+
+//--------------------- .nv.global.init           --------------------------
+	.section	.nv.global.init,"aw",@progbits
+	.align	8
+	.type		__unnamed_2,@"STT_CUDA_OBJECT"
+	.size		__unnamed_2,(__unnamed_1 - __unnamed_2)
+	.other		__unnamed_2,@"STO_CUDA_GLOBAL STV_DEFAULT"
+__unnamed_2:
+.nv.global.init:
+        /*0000*/ 	.byte	0x00, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.align		8
+        /*0010*/ 	.dword	fun@R_CUDA_G64(_$_str)
+	.align		8
+	.type		__unnamed_1,@"STT_CUDA_OBJECT"
+	.size		__unnamed_1,(_$_str - __unnamed_1)
+	.other		__unnamed_1,@"STO_CUDA_GLOBAL STV_DEFAULT"
+__unnamed_1:
+        /*0018*/ 	.byte	0x00, 0x00, 0x00, 0x00, 0x02, 0x02, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.align		8
+        /*0028*/ 	.dword	fun@R_CUDA_G64(_$_str)
+	.align		8
+	.type		_$_str,@"STT_CUDA_OBJECT"
+	.size		_$_str,(.L_2 - _$_str)
+	.other		_$_str,@"STO_CUDA_GLOBAL STV_DEFAULT"
+_$_str:
+        /*0030*/ 	.byte	0x3b, 0x75, 0x6e, 0x6b, 0x6e, 0x6f, 0x77, 0x6e, 0x3b, 0x75, 0x6e, 0x6b, 0x6e, 0x6f, 0x77, 0x6e
+        /*0040*/ 	.byte	0x3b, 0x30, 0x3b, 0x30, 0x3b, 0x3b, 0x00
+.L_2:
+
+
+//--------------------- .nv.global                --------------------------
+	.section	.nv.global,"aw",@nobits
+	.weak		__omp_offloading_10302_17e8471_main_l9_exec_mode
+	.type		__omp_offloading_10302_17e8471_main_l9_exec_mode,@"STT_CUDA_OBJECT"
+	.size		__omp_offloading_10302_17e8471_main_l9_exec_mode,(.L_1 - __omp_offloading_10302_17e8471_main_l9_exec_mode)
+	.other		__omp_offloading_10302_17e8471_main_l9_exec_mode,@"STO_CUDA_GLOBAL STV_DEFAULT"
+__omp_offloading_10302_17e8471_main_l9_exec_mode:
+.nv.global:
+	.zero		1
+.L_1:
+
+
+//--------------------- .nv_debug.shared          --------------------------
+	.section	.nv_debug.shared,"aw",@nobits
+	.align	8
+	.type		_openmp_kernel_static_glob_rd$ptr,@"STT_CUDA_OBJECT"
+	.size		_openmp_kernel_static_glob_rd$ptr, 8, 8
+	.other		_openmp_kernel_static_glob_rd$ptr,@"STO_CUDA_SHARED STV_DEFAULT"
+_openmp_kernel_static_glob_rd$ptr:
+	.zero		8
+.nv_debug.shared:
+
+
+//--------------------- SYMBOLS --------------------------
+
+	.type		__kmpc_spmd_kernel_init,@function
+	.type		__kmpc_global_thread_num,@function
+	.type		__kmpc_spmd_kernel_deinit_v2,@function
+	.type		__kmpc_for_static_init_4,@function
+	.type		__kmpc_for_static_fini,@function
