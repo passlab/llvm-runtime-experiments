@@ -1,0 +1,87 @@
+yshi10@passlab-yaying:~/10.0$ clang  -fopenmp -fopenmp-targets=nvptx64-nvidia-cuda omp-axpy.c -c --verbose --save-temps
+clang version 10.0.0 (https://github.com/llvm-mirror/clang.git 65acf43270ea2894dffa0d0b292b92402f80c8cb) (https://github.com/llvm-mirror/llvm.git 2c4ca6832fa6b306ee6a7010bfb80a3f2596f824)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/yshi10/10.0/install/bin
+Found candidate GCC installation: /usr/lib/gcc/i686-linux-gnu/8
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6.5.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.4.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.4.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 9.2
+ "/home/yshi10/10.0/install/bin/clang-10" -cc1 -triple x86_64-unknown-linux-gnu -E -save-temps=cwd -disable-free -disable-llvm-verifier -discard-value-names -main-file-name omp-axpy.c -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -resource-dir /home/yshi10/10.0/install/lib/clang/10.0.0 -internal-isystem /usr/local/include -internal-isystem /home/yshi10/10.0/install/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /usr/local/include -internal-isystem /home/yshi10/10.0/install/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/yshi10/10.0 -ferror-limit 19 -fmessage-length 0 -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -fcolor-diagnostics -fopenmp-targets=nvptx64-nvidia-cuda -faddrsig -o omp-axpy-host-x86_64-unknown-linux-gnu.i -x c omp-axpy.c
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0svn default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/include"
+ignoring nonexistent directory "/include"
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/home/yshi10/10.0/install/lib/clang/10.0.0/include"
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu"
+ignoring duplicate directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /home/yshi10/10.0/install/lib/clang/10.0.0/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+ "/home/yshi10/10.0/install/bin/clang-10" -cc1 -triple x86_64-unknown-linux-gnu -emit-llvm-bc -emit-llvm-uselists -save-temps=cwd -disable-free -disable-llvm-verifier -discard-value-names -main-file-name omp-axpy.c -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -resource-dir /home/yshi10/10.0/install/lib/clang/10.0.0 -fdebug-compilation-dir /home/yshi10/10.0 -ferror-limit 19 -fmessage-length 0 -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -fcolor-diagnostics -disable-llvm-passes -fopenmp-targets=nvptx64-nvidia-cuda -faddrsig -o omp-axpy-host-x86_64-unknown-linux-gnu.bc -x cpp-output omp-axpy-host-x86_64-unknown-linux-gnu.i
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0svn default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+End of search list.
+ "/home/yshi10/10.0/install/bin/clang-10" -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -E -save-temps=cwd -disable-free -disable-llvm-verifier -discard-value-names -main-file-name omp-axpy.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -no-integrated-as -fuse-init-array -mlink-builtin-bitcode /usr/local/cuda/nvvm/libdevice/libdevice.10.bc -target-feature +ptx61 -target-sdk-version=9.2 -mlink-builtin-bitcode /home/yshi10/10.0/install/lib/libomptarget-nvptx-sm_60.bc -target-cpu sm_60 -dwarf-column-info -debugger-tuning=gdb -v -resource-dir /home/yshi10/10.0/install/lib/clang/10.0.0 -internal-isystem /home/yshi10/10.0/install/lib/clang/10.0.0/include/openmp_wrappers -include __clang_openmp_math_declares.h -internal-isystem /usr/local/include -internal-isystem /home/yshi10/10.0/install/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /usr/local/include -internal-isystem /home/yshi10/10.0/install/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fno-dwarf-directory-asm -fdebug-compilation-dir /home/yshi10/10.0 -ferror-limit 19 -fmessage-length 0 -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -fcolor-diagnostics -fopenmp-is-device -o omp-axpy-openmp-nvptx64-nvidia-cuda.i -x c omp-axpy.c
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0svn default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/include"
+ignoring nonexistent directory "/include"
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/home/yshi10/10.0/install/lib/clang/10.0.0/include"
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu"
+ignoring duplicate directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/yshi10/10.0/install/lib/clang/10.0.0/include/openmp_wrappers
+ /usr/local/include
+ /home/yshi10/10.0/install/lib/clang/10.0.0/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+ "/home/yshi10/10.0/install/bin/clang-10" -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -emit-llvm-bc -emit-llvm-uselists -save-temps=cwd -disable-free -disable-llvm-verifier -discard-value-names -main-file-name omp-axpy.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -no-integrated-as -fuse-init-array -mlink-builtin-bitcode /usr/local/cuda/nvvm/libdevice/libdevice.10.bc -target-feature +ptx61 -target-sdk-version=9.2 -mlink-builtin-bitcode /home/yshi10/10.0/install/lib/libomptarget-nvptx-sm_60.bc -target-cpu sm_60 -dwarf-column-info -debugger-tuning=gdb -v -resource-dir /home/yshi10/10.0/install/lib/clang/10.0.0 -fno-dwarf-directory-asm -fdebug-compilation-dir /home/yshi10/10.0 -ferror-limit 19 -fmessage-length 0 -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -fcolor-diagnostics -disable-llvm-passes -fopenmp-is-device -fopenmp-host-ir-file-path omp-axpy-host-x86_64-unknown-linux-gnu.bc -o omp-axpy-openmp-nvptx64-nvidia-cuda.bc -x cpp-output omp-axpy-openmp-nvptx64-nvidia-cuda.i
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0svn default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+End of search list.
+ "/home/yshi10/10.0/install/bin/clang-10" -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -S -save-temps=cwd -disable-free -disable-llvm-verifier -discard-value-names -main-file-name omp-axpy.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -no-integrated-as -fuse-init-array -mlink-builtin-bitcode /usr/local/cuda/nvvm/libdevice/libdevice.10.bc -target-feature +ptx61 -target-sdk-version=9.2 -mlink-builtin-bitcode /home/yshi10/10.0/install/lib/libomptarget-nvptx-sm_60.bc -target-cpu sm_60 -dwarf-column-info -debugger-tuning=gdb -v -resource-dir /home/yshi10/10.0/install/lib/clang/10.0.0 -fno-dwarf-directory-asm -fdebug-compilation-dir /home/yshi10/10.0 -ferror-limit 19 -fmessage-length 0 -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -fcolor-diagnostics -fopenmp-is-device -o omp-axpy-openmp-nvptx64-nvidia-cuda.s -x ir omp-axpy-openmp-nvptx64-nvidia-cuda.bc
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0svn default target x86_64-unknown-linux-gnu
+ "/usr/local/cuda/bin/ptxas" -m64 -O0 -v --gpu-name sm_60 --output-file omp-axpy-openmp-nvptx64-nvidia-cuda.cubin omp-axpy-openmp-nvptx64-nvidia-cuda.s -c
+ptxas info    : 92 bytes gmem
+ptxas info    : Function properties for __kmpc_for_static_fini
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for _ZL10atomicExchPjj9
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for _ZL9atomicAddPjj7
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for _ZL10atomicExchPyy
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for __omp_outlined__
+    152 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+ptxas info    : Function properties for _ZL9atomicAddPyy8
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for __kmpc_global_thread_num
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for __kmpc_for_static_init_4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for __kmpc_spmd_kernel_init
+    40 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+ptxas info    : Function properties for __kmpc_spmd_kernel_deinit_v2
+    40 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+ptxas info    : Compiling entry function '__omp_offloading_10302_a18a2_axpy_l12' for 'sm_60'
+ptxas info    : Function properties for __omp_offloading_10302_a18a2_axpy_l12
+    48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 21 registers, 352 bytes cmem[0]
+ "/home/yshi10/10.0/install/bin/clang-10" -cc1 -triple x86_64-unknown-linux-gnu -S -save-temps=cwd -disable-free -disable-llvm-verifier -discard-value-names -main-file-name omp-axpy.c -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -resource-dir /home/yshi10/10.0/install/lib/clang/10.0.0 -fdebug-compilation-dir /home/yshi10/10.0 -ferror-limit 19 -fmessage-length 0 -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -fcolor-diagnostics -fopenmp-targets=nvptx64-nvidia-cuda -faddrsig -o omp-axpy-host-x86_64-unknown-linux-gnu.s -x ir omp-axpy-host-x86_64-unknown-linux-gnu.bc
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0svn default target x86_64-unknown-linux-gnu
+ "/home/yshi10/10.0/install/bin/clang-10" -cc1as -triple x86_64-unknown-linux-gnu -filetype obj -main-file-name omp-axpy.c -target-cpu x86-64 -dwarf-version=4 -mrelocation-model static -mrelax-all -o omp-axpy-host-x86_64-unknown-linux-gnu.o omp-axpy-host-x86_64-unknown-linux-gnu.s
+ "/home/yshi10/10.0/install/bin/clang-offload-bundler" -type=o -targets=openmp-nvptx64-nvidia-cuda,host-x86_64-unknown-linux-gnu -outputs=omp-axpy.o -inputs=omp-axpy-openmp-nvptx64-nvidia-cuda.cubin,omp-axpy-host-x86_64-unknown-linux-gnu.o
+
