@@ -1,0 +1,249 @@
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 33 07 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            <unknown: 33>
+  ABI Version:                       7
+  Type:                              REL (Relocatable file)
+  Machine:                           NVIDIA CUDA architecture
+  Version:                           0x5c
+  Entry point address:               0x0
+  Start of program headers:          0 (bytes into file)
+  Start of section headers:          42560 (bytes into file)
+  Flags:                             0x3c053c
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         0
+  Size of section headers:           64 (bytes)
+  Number of section headers:         40
+  Section header string table index: 1
+
+Section Headers:
+  [Nr] Name              Type             Address           Offset
+       Size              EntSize          Flags  Link  Info  Align
+  [ 0]                   NULL             0000000000000000  00000000
+       0000000000000000  0000000000000000           0     0     0
+  [ 1] .shstrtab         STRTAB           0000000000000000  00000040
+       0000000000000472  0000000000000000           0     0     1
+  [ 2] .strtab           STRTAB           0000000000000000  000004b2
+       000000000000068a  0000000000000000           0     0     1
+  [ 3] .symtab           SYMTAB           0000000000000000  00000b40
+       0000000000000420  0000000000000018           2    35     8
+  [ 4] .nv.info          LOPROC+0         0000000000000000  00000f60
+       0000000000000108  0000000000000000           3     0     4
+  [ 5] .nv.info.__kmpc_f LOPROC+0         0000000000000000  00001068
+       0000000000000004  0000000000000000           3    26     4
+  [ 6] .nv.info._ZL10ato LOPROC+0         0000000000000000  0000106c
+       000000000000000c  0000000000000000           3    27     4
+  [ 7] .nv.info._ZL9atom LOPROC+0         0000000000000000  00001078
+       000000000000000c  0000000000000000           3    28     4
+  [ 8] .nv.info._ZL10ato LOPROC+0         0000000000000000  00001084
+       000000000000000c  0000000000000000           3    29     4
+  [ 9] .nv.info.__omp_ou LOPROC+0         0000000000000000  00001090
+       0000000000000014  0000000000000000           3    30     4
+  [10] .nv.info._ZL9atom LOPROC+0         0000000000000000  000010a4
+       000000000000000c  0000000000000000           3    31     4
+  [11] .nv.info.__kmpc_g LOPROC+0         0000000000000000  000010b0
+       000000000000000c  0000000000000000           3    32     4
+  [12] .nv.info.__kmpc_f LOPROC+0         0000000000000000  000010bc
+       000000000000001c  0000000000000000           3    33     4
+  [13] .nv.info.__kmpc_s LOPROC+0         0000000000000000  000010d8
+       000000000000000c  0000000000000000           3    34     4
+  [14] .nv.info.__kmpc_s LOPROC+0         0000000000000000  000010e4
+       000000000000000c  0000000000000000           3    35     4
+  [15] .nv.info.__omp_of LOPROC+0         0000000000000000  000010f0
+       0000000000000060  0000000000000000           3    36     4
+  [16] .nv.callgraph     LOPROC+0x1       0000000000000000  00001150
+       0000000000000080  0000000000000008           3     0     4
+  [17] .nv.prototype     LOPROC+0x2       0000000000000000  000011d0
+       0000000000000008  0000000000000008           3     0     4
+  [18] .rel.text.__omp_o REL              0000000000000000  000011d8
+       0000000000000090  0000000000000010           3    30     8
+  [19] .rel.text.__kmpc_ REL              0000000000000000  00001268
+       0000000000000060  0000000000000010           3    32     8
+  [20] .rel.text.__kmpc_ REL              0000000000000000  000012c8
+       0000000000000040  0000000000000010           3    33     8
+  [21] .rel.text.__kmpc_ REL              0000000000000000  00001308
+       00000000000000e0  0000000000000010           3    34     8
+  [22] .rel.text.__kmpc_ REL              0000000000000000  000013e8
+       0000000000000080  0000000000000010           3    35     8
+  [23] .rel.text.__omp_o REL              0000000000000000  00001468
+       0000000000000060  0000000000000010           3    36     8
+  [24] .rel.nv.global.in REL              0000000000000000  000014c8
+       0000000000000020  0000000000000010           3    37     8
+readelf: Warning: [25]: Unexpected value (36) in info field.
+  [25] .nv.constant0.__o PROGBITS         0000000000000000  000014e8
+       0000000000000160  0000000000000000   A       0    36     4
+readelf: Warning: [26]: Unexpected value (117440513) in info field.
+  [26] .text.__kmpc_for_ PROGBITS         0000000000000000  00001660
+       0000000000000040  0000000000000000  AX       3   117440513     32
+readelf: Warning: [27]: Unexpected value (117440524) in info field.
+  [27] .text._ZL10atomic PROGBITS         0000000000000000  000016a0
+       0000000000000100  0000000000000000  AX       3   117440524     32
+readelf: Warning: [28]: Unexpected value (117440526) in info field.
+  [28] .text._ZL9atomicA PROGBITS         0000000000000000  000017a0
+       0000000000000140  0000000000000000  AX       3   117440526     32
+readelf: Warning: [29]: Unexpected value (134217744) in info field.
+  [29] .text._ZL10atomic PROGBITS         0000000000000000  000018e0
+       0000000000000100  0000000000000000  AX       3   134217744     32
+readelf: Warning: [30]: Unexpected value (402653202) in info field.
+  [30] .text.__omp_outli PROGBITS         0000000000000000  000019e0
+       0000000000001ec0  0000000000000000  AX       3   402653202     32
+readelf: Warning: [31]: Unexpected value (167772181) in info field.
+  [31] .text._ZL9atomicA PROGBITS         0000000000000000  000038a0
+       0000000000000280  0000000000000000  AX       3   167772181     32
+readelf: Warning: [32]: Unexpected value (167772183) in info field.
+  [32] .text.__kmpc_glob PROGBITS         0000000000000000  00003b20
+       0000000000000d00  0000000000000000  AX       3   167772183     32
+readelf: Warning: [33]: Unexpected value (721420308) in info field.
+  [33] .text.__kmpc_for_ PROGBITS         0000000000000000  00004820
+       0000000000003080  0000000000000000  AX       3   721420308     32
+readelf: Warning: [34]: Unexpected value (402653210) in info field.
+  [34] .text.__kmpc_spmd PROGBITS         0000000000000000  000078a0
+       0000000000001e80  0000000000000000 AXo       3   402653210     32
+readelf: Warning: [35]: Unexpected value (402653212) in info field.
+  [35] .text.__kmpc_spmd PROGBITS         0000000000000000  00009720
+       0000000000000740  0000000000000000 AXo       3   402653212     32
+readelf: Warning: [36]: Unexpected value (352321566) in info field.
+  [36] .text.__omp_offlo PROGBITS         0000000000000000  00009e60
+       0000000000000780  0000000000000000  AX       3   352321566     32
+  [37] .nv.global.init   PROGBITS         0000000000000000  0000a5e0
+       000000000000005b  0000000000000000  WA       0     0     8
+  [38] .nv.global        NOBITS           0000000000000000  0000a63b
+       0000000000000001  0000000000000000  WA       0     0     1
+  [39] .nv_debug.shared  NOBITS           0000000000000000  0000a640
+       0000000000000008  0000000000000000  WA       0     0     8
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  p (processor specific)
+
+There are no section groups in this file.
+
+There are no program headers in this file.
+
+There is no dynamic section in this file.
+
+Relocation section '.rel.text.__omp_outlined__' at offset 0x11d8 contains 9 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name
+000000001e10  00010000002a unrecognized: 2a      0000000000000000 __kmpc_for_static_fini
+000000001d90  00070000002c unrecognized: 2c      0000000000000018 __unnamed_1
+000000001d88  00070000002b unrecognized: 2b      0000000000000018 __unnamed_1
+000000001968  002b0000002a unrecognized: 2a      0000000000000000 vprintf
+0000000018c8  00080000002c unrecognized: 2c      0000000000000030 _$_str1
+0000000018b8  00080000002b unrecognized: 2b      0000000000000030 _$_str1
+000000000cb8  00140000002a unrecognized: 2a      0000000000000000 __kmpc_for_static_init
+000000000b68  00070000002c unrecognized: 2c      0000000000000018 __unnamed_1
+000000000b58  00070000002b unrecognized: 2b      0000000000000018 __unnamed_1
+
+Relocation section '.rel.text.__kmpc_global_thread_num' at offset 0x1268 contains 6 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name
+000000000a38  00290000002d unrecognized: 2d      0000000000000000 omptarget_nvptx_thread
+0000000008e8  00260000002d unrecognized: 2d      0000000000000000 parallelLevel
+0000000007b0  00250000002d unrecognized: 2d      0000000000000000 execution_param
+000000000598  00250000002d unrecognized: 2d      0000000000000000 execution_param
+000000000328  00250000002d unrecognized: 2d      0000000000000000 execution_param
+0000000001d0  00250000002d unrecognized: 2d      0000000000000000 execution_param
+
+Relocation section '.rel.text.__kmpc_for_static_init_4' at offset 0x12c8 contains 4 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name
+0000000006d0  00270000002d unrecognized: 2d      0000000000000000 threadsInTeam
+000000000530  00260000002d unrecognized: 2d      0000000000000000 parallelLevel
+0000000003e8  00250000002d unrecognized: 2d      0000000000000000 execution_param
+0000000001d0  00250000002d unrecognized: 2d      0000000000000000 execution_param
+
+Relocation section '.rel.text.__kmpc_spmd_kernel_init' at offset 0x1308 contains 14 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name
+000000001c38  002a0000002d unrecognized: 2d      0000000000000000 DataSharingState
+000000000f48  00290000002d unrecognized: 2d      0000000000000000 omptarget_nvptx_thread
+000000000cd0  00290000002d unrecognized: 2d      0000000000000000 omptarget_nvptx_thread
+000000000cc8  000c0000002a unrecognized: 2a      0000000000000000 _ZL10atomicExchPjj9
+000000000b78  00150000002a unrecognized: 2a      0000000000000000 _ZL9atomicAddPyy8
+000000000ae8  000e0000002a unrecognized: 2a      0000000000000000 _ZL9atomicAddPjj7
+0000000009d8  000e0000002a unrecognized: 2a      0000000000000000 _ZL9atomicAddPjj7
+000000000910  00240000002c unrecognized: 2c      0000000000000000 omptarget_nvptx_device
+000000000908  00240000002b unrecognized: 2b      0000000000000000 omptarget_nvptx_device
+000000000778  00280000002d unrecognized: 2d      0000000000000000 usedSlotIdx
+0000000005a8  00260000002d unrecognized: 2d      0000000000000000 parallelLevel
+000000000498  00260000002d unrecognized: 2d      0000000000000000 parallelLevel
+0000000003d0  00280000002d unrecognized: 2d      0000000000000000 usedSlotIdx
+0000000000f8  00250000002d unrecognized: 2d      0000000000000000 execution_param
+
+Relocation section '.rel.text.__kmpc_spmd_kernel_deinit_v2' at offset 0x13e8 contains 8 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name
+000000000678  000c0000002a unrecognized: 2a      0000000000000000 _ZL10atomicExchPjj9
+000000000638  00100000002a unrecognized: 2a      0000000000000000 _ZL10atomicExchPyy
+000000000590  000e0000002a unrecognized: 2a      0000000000000000 _ZL9atomicAddPjj7
+000000000488  000e0000002a unrecognized: 2a      0000000000000000 _ZL9atomicAddPjj7
+000000000338  00290000002d unrecognized: 2d      0000000000000000 omptarget_nvptx_thread
+0000000002c8  00240000002c unrecognized: 2c      0000000000000000 omptarget_nvptx_device
+0000000002b8  00240000002b unrecognized: 2b      0000000000000000 omptarget_nvptx_device
+000000000128  00280000002d unrecognized: 2d      0000000000000000 usedSlotIdx
+
+Relocation section '.rel.text.__omp_offloading_10302_a18a2_axpy_l12' at offset 0x1468 contains 6 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name
+000000000758  001c0000002a unrecognized: 2a      0000000000000000 __kmpc_spmd_kernel_dei
+000000000730  00120000002a unrecognized: 2a      0000000000000000 __omp_outlined__
+0000000005e8  00170000002a unrecognized: 2a      0000000000000000 __kmpc_global_thread_n
+000000000570  00090000002c unrecognized: 2c      0000000000000000 __unnamed_2
+000000000568  00090000002b unrecognized: 2b      0000000000000000 __unnamed_2
+000000000550  001a0000002a unrecognized: 2a      0000000000000000 __kmpc_spmd_kernel_ini
+
+Relocation section '.rel.nv.global.init' at offset 0x14c8 contains 2 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name
+000000000028  000600000004 unrecognized: 4       0000000000000044 _$_str
+000000000010  000600000004 unrecognized: 4       0000000000000044 _$_str
+
+The decoding of unwind sections for machine type NVIDIA CUDA architecture is not currently supported.
+
+Symbol table '.symtab' contains 44 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000    64 FUNC    LOCAL  DEFAULT   26 __kmpc_for_static_fini
+     2: 0000000000000000     0 SECTION LOCAL  DEFAULT   26 .text.__kmpc_for_static_f
+     3: 0000000000000000     0 SECTION LOCAL  DEFAULT   38 .nv.global
+     4: 0000000000000000     1 <processor specific>: 13 WEAK   DEFAULT [<other>: 20]    38 __omp_offloading_10302_a1
+     5: 0000000000000000     0 SECTION LOCAL  DEFAULT   37 .nv.global.init
+     6: 0000000000000044    23 <processor specific>: 13 LOCAL  DEFAULT [<other>: 20]    37 _$_str
+     7: 0000000000000018    24 <processor specific>: 13 LOCAL  DEFAULT [<other>: 20]    37 __unnamed_1
+     8: 0000000000000030    20 <processor specific>: 13 LOCAL  DEFAULT [<other>: 20]    37 _$_str1
+     9: 0000000000000000    24 <processor specific>: 13 LOCAL  DEFAULT [<other>: 20]    37 __unnamed_2
+    10: 0000000000000000     0 SECTION LOCAL  DEFAULT   39 .nv_debug.shared
+    11: 0000000000000008     8 <processor specific>: 13 LOCAL  DEFAULT [<other>: 40]    39 _openmp_kernel_static_glo
+    12: 0000000000000000   256 FUNC    LOCAL  DEFAULT   27 _ZL10atomicExchPjj9
+    13: 0000000000000000     0 SECTION LOCAL  DEFAULT   27 .text._ZL10atomicExchPjj9
+    14: 0000000000000000   320 FUNC    LOCAL  DEFAULT   28 _ZL9atomicAddPjj7
+    15: 0000000000000000     0 SECTION LOCAL  DEFAULT   28 .text._ZL9atomicAddPjj7
+    16: 0000000000000000   256 FUNC    LOCAL  DEFAULT   29 _ZL10atomicExchPyy
+    17: 0000000000000000     0 SECTION LOCAL  DEFAULT   29 .text._ZL10atomicExchPyy
+    18: 0000000000000000  7872 FUNC    LOCAL  DEFAULT   30 __omp_outlined__
+    19: 0000000000000000     0 SECTION LOCAL  DEFAULT   30 .text.__omp_outlined__
+    20: 0000000000000000 12416 FUNC    LOCAL  DEFAULT   33 __kmpc_for_static_init_4
+    21: 0000000000000000   640 FUNC    LOCAL  DEFAULT   31 _ZL9atomicAddPyy8
+    22: 0000000000000000     0 SECTION LOCAL  DEFAULT   31 .text._ZL9atomicAddPyy8
+    23: 0000000000000000  3328 FUNC    LOCAL  DEFAULT   32 __kmpc_global_thread_num
+    24: 0000000000000000     0 SECTION LOCAL  DEFAULT   32 .text.__kmpc_global_threa
+    25: 0000000000000000     0 SECTION LOCAL  DEFAULT   33 .text.__kmpc_for_static_i
+    26: 0000000000000000  7808 FUNC    LOCAL  DEFAULT   34 __kmpc_spmd_kernel_init
+    27: 0000000000000000     0 SECTION LOCAL  DEFAULT   34 .text.__kmpc_spmd_kernel_
+    28: 0000000000000000  1856 FUNC    LOCAL  DEFAULT   35 __kmpc_spmd_kernel_deinit
+    29: 0000000000000000     0 SECTION LOCAL  DEFAULT   35 .text.__kmpc_spmd_kernel_
+    30: 0000000000000000  1920 FUNC    WEAK   DEFAULT [<other>: 10]    36 __omp_offloading_10302_a1
+    31: 0000000000000000     0 SECTION LOCAL  DEFAULT   36 .text.__omp_offloading_10
+    32: 0000000000000000     0 SECTION LOCAL  DEFAULT   25 .nv.constant0.__omp_offlo
+    33: 0000000000000140    32 <processor specific>: 13 LOCAL  INTERNAL [<other>: 80]    25 _param
+    34: 0000000000000000     0 SECTION LOCAL  DEFAULT   16 .nv.callgraph
+    35: 0000000000000000     0 SECTION LOCAL  DEFAULT   17 .nv.prototype
+readelf: Warning: local symbol 35 found at index >= .symtab's sh_info value of 35
+    36: 0000000000000000 0x28309780 <processor specific>: 13 GLOBAL DEFAULT [<other>: 20]   UND omptarget_nvptx_device_St
+    37: 0000000000000000     4 <processor specific>: 13 GLOBAL DEFAULT [<other>: 40]   UND execution_param
+    38: 0000000000000000    32 <processor specific>: 13 GLOBAL DEFAULT [<other>: 40]   UND parallelLevel
+    39: 0000000000000000     2 <processor specific>: 13 GLOBAL DEFAULT [<other>: 40]   UND threadsInTeam
+    40: 0000000000000000     4 <processor specific>: 13 GLOBAL DEFAULT [<other>: 40]   UND usedSlotIdx
+    41: 0000000000000000     8 <processor specific>: 13 GLOBAL DEFAULT [<other>: 40]   UND omptarget_nvptx_threadPri
+    42: 0000000000000000   896 <processor specific>: 13 GLOBAL DEFAULT [<other>: 40]   UND DataSharingState
+    43: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND vprintf
+
+No version information found in this file.
